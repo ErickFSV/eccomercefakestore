@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Produtos</title>
+
+    <!-- LINKS, ETC -->
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+        integrity="sha512-5J6QrCNZBCPtK+VAEwduR1FpUWDPZ0SREKVb+3XyTiRKAdJ9exhFst56S4o1TKgRfgodfUD6WRaBLrK9SGjzRg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.7.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!-- Do cabecalho-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700">
+
+
+    <!-- Do rodapé-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
+
+
+    <!-- files -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="/codigo/img/logo.png" type="image/png" />
+
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    <link href="header.css" rel="stylesheet" type="text/css" />
+    <link href="footer.css" rel="stylesheet" type="text/css" />
+</head>
+
+<header>
+
+    <!-- INICIO CABECALHO -->
+    <div>
+        <div class="header-blue">
+            <nav class="navbar navbar-dark navbar-expand-md navigation-clean-search">
+                <div class="container"><a class="navbar-brand" href="index.html">Rick Store</a><button
+                        class="navbar-toggler" data-toggle="collapse" data-target="#navcol-1"><span
+                            class="sr-only">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
+                    <div class="collapse navbar-collapse" id="navcol-1">
+
+                        <form class="form-inline mr-auto" target="_self">
+
+                        </form><span class="navbar-text"> <a href="#" class="login">Log In</a></span><a
+                            class="btn btn-light action-button" role="button" href="#">Sign Up</a>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </div>
+
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/js/bootstrap.bundle.min.js"></script>
+    <!-- FIM DO CABECALHO -->
+
+
+</header>
+
+<body>
+
+    <!-- FILTRAGEM -->
+
+    <div id="filterContainer">
+        <label for="priceFilter" style="color: white;">Price:</label>
+        <select id="priceFilter" style="width: 120px;">
+            <option value="">All</option>
+            <option value="0-1000">$0 - $1000</option>
+            <option value="1000-2000">$1000 - $2000</option>
+            <option value="2000-3000">$2000 - $3000</option>
+        </select>
+    </div>
+
+    <div id="filterContainer">
+        <label for="categoryFilter" style="color: white;">Category:</label>
+        <select id="categoryFilter">
+            <option value="">All</option>
+            <option value="Apparel - Topwear">Apparel - Topwear</option>
+            <option value="Footwear - Shoes">Footwear - Shoes</option>
+            <option value="Apparel - Apparel Set">Apparel - Apparel Set</option>
+        </select>
+    </div>
+
+        <!-- BUSCAR -->
+        <form id="searchForm">
+            <input type="text" id="searchInput" placeholder="Search products...">
+            <button type="submit">Search</button>
+        </form>
+    
+    
+        <!-- FIM BUSCAR -->
+    <!-- FIM FILTRAGEM -->
+
+    <main>
+        <div id="productContainer"></div>
+    </main>
+
+
+    <footer>
+        <div class="footer-basic">
+            <div class="student">
+                <p>Erick Fernando dos Santos Vieira (726174)</p>
+                <p>Information Systems - PUC Minas</p>
+            </div>
+
+            <div class="social">
+                <a href="#"><i class="icon ion-social-facebook"></i></a>
+                <a href="#"><i class="icon ion-social-instagram"></i></a>
+                <a href="#"><i class="icon ion-social-twitter"></i></a>
+                <a href="#"><i class="icon ion-social-github"></i></a>
+            </div>
+
+            <p class="copyright">RickStore © 2023</p>
+        </div>
+    </footer>
+
+
+    <script src="page.js"></script>
+</body>
+
+</html>

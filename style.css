@@ -1,0 +1,163 @@
+main {
+   min-height: 50px;
+}
+
+.card {
+  box-shadow: 20px 20px 20px rgba(0, 0, 0, 0.4);
+  box-sizing: border-box;
+  margin: 0 auto;
+  align-items: center;
+  text-align: center;
+  display: inline-flex;
+  flex-direction: column;
+  width: 500px;
+  padding: 10px;
+  border-radius: 100px;
+  margin-bottom: 30px;
+  margin-top: 60px;
+  height: auto;
+  background-color: #ffffff;
+}
+
+.card img {
+  width: 200px;
+  height: 200px;
+  margin-bottom: 10px;
+}
+
+.card h1 {
+  font-size: 19px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.card h4 {
+  font-size: 16px;
+  color: red;
+  margin-top: 15px;
+}
+
+.card p {
+  font-size: 16px;
+  color: rgb(116, 124, 0);
+}
+
+.card h2 {
+  font-size: 16px;
+  color: rgb(0, 0, 0);
+}
+
+.product-category {
+  font-size: 14px;
+  margin-bottom: 1px;
+}
+
+.product-rating {
+  font-size: 14px;
+  margin-bottom: 1px;
+}
+
+.card button {
+  background-color: #022025;
+  color: rgb(170, 170, 170);
+  border: 1px solid #000000;
+  border-radius: 5px;
+  width: 120px;
+  height: 40px;
+  cursor: pointer;
+  font-size: 17px;
+  margin: 10px;
+}
+
+.card button:hover{
+  color: #305f59;
+}
+
+#productContainer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+@media screen and (max-width: 768px) {
+  .card {
+    width: 100%;
+  }
+}
+
+
+/* Barra de pesquisa */
+#searchForm {
+  margin-top: 10px;
+}
+
+#searchInput {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 14px;
+  width: 200px;
+  background-color: transparent;
+}
+
+#searchInput::placeholder {
+  color: #c0c0c0;
+}
+
+#searchForm button {
+  background-color: #022025;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  margin-left: 10px;
+  cursor: pointer;
+}
+
+#searchForm button:hover {
+  background-color: #336972;
+}
+/* Fim Barra de pesquisa */
+
+
+
+
+
+
+/* Filtros */
+#filterContainer {
+padding: 10px;
+
+}
+
+#filterContainer label {
+  font-size: 16px;
+  font-weight: bold;
+  margin-right: 10px;
+}
+
+#filterContainer select {
+  padding: 8px;
+  font-size: 14px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+}
+
+#filterContainer select option {
+  font-size: 14px;
+}
+
+#filterContainer select:focus {
+  outline: none;
+  border-color: #8a9bb2;
+  box-shadow: 0 0 0 2px rgba(33, 133, 208, 0.2);
+}
+
+#filterContainer select:hover {
+  cursor: pointer;
+}
+
+#filterContainer select:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
